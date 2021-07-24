@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on θsrv</title>
-    <link>https://tongson.github.io/posts/</link>
-    <description>Recent content in Posts on θsrv</description>
+    <title>Posts on </title>
+    <link>https://0srv.com/posts/</link>
+    <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Thu, 18 Feb 2021 17:50:30 +0800</lastBuildDate><atom:link href="https://tongson.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Feb 2021 17:50:30 +0800</lastBuildDate><atom:link href="https://0srv.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FortiGate x SonicWall</title>
-      <link>https://tongson.github.io/posts/fortigate-x-sonicwall/</link>
+      <link>https://0srv.com/posts/fortigate-x-sonicwall/</link>
       <pubDate>Thu, 18 Feb 2021 17:50:30 +0800</pubDate>
       <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://tongson.github.io/posts/fortigate-x-sonicwall/</guid>
+      <guid>https://0srv.com/posts/fortigate-x-sonicwall/</guid>
       <description>This comparison of network equipment was commissioned by a client. I am evaluating Fortinet and SonicWall products. No practical testing was done. This will be a factual objective comparison using publicly available information. Hopefully, the reader will integrate my findings with their own evaluation criteria.
 The first impression from my client’s demo experience is that Fortigate had the best coordination and quickest turnaround. SonicWall had some difficulty and delays but eventually delivered a working demo.</description>
     </item>
