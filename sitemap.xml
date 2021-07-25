@@ -5,13 +5,16 @@
     <loc>https://0srv.com/posts/a-kind-demo/</loc>
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
+    <loc>https://0srv.com/tags/containers/</loc>
+    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
+  </url><url>
     <loc>https://0srv.com/tags/demo/</loc>
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/devops/</loc>
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
-    <loc>https://0srv.com/tags/kubernetes/</loc>
+    <loc>https://0srv.com/tags/go/</loc>
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/posts/</loc>
@@ -39,9 +42,6 @@
     <lastmod>2021-06-07T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/posts/file-sharing/</loc>
-    <lastmod>2021-03-23T17:50:30+08:00</lastmod>
-  </url><url>
-    <loc>https://0srv.com/tags/notion/</loc>
     <lastmod>2021-03-23T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/solutions/</loc>
