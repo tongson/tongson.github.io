@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on θsrv</title>
+    <title>Tags on zerθsrv</title>
     <link>https://0srv.com/tags/</link>
-    <description>Recent content in Tags on θsrv</description>
+    <description>Recent content in Tags on zerθsrv</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Tue, 23 Mar 2021 17:50:30 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Jun 2021 17:50:30 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>development</title>
+      <link>https://0srv.com/tags/development/</link>
+      <pubDate>Mon, 07 Jun 2021 17:50:30 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://0srv.com/tags/devops/</link>
+      <pubDate>Mon, 07 Jun 2021 17:50:30 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://0srv.com/tags/programming/</link>
+      <pubDate>Mon, 07 Jun 2021 17:50:30 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SRE</title>
+      <link>https://0srv.com/tags/sre/</link>
+      <pubDate>Mon, 07 Jun 2021 17:50:30 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/sre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://0srv.com/tags/testing/</link>
+      <pubDate>Mon, 07 Jun 2021 17:50:30 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/testing/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>notion</title>
       <link>https://0srv.com/tags/notion/</link>
