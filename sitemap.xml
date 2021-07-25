@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://0srv.com/tags/development/</loc>
-    <lastmod>2021-06-07T17:50:30+08:00</lastmod>
+    <loc>https://0srv.com/posts/a-kind-demo/</loc>
+    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/demo/</loc>
+    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/devops/</loc>
-    <lastmod>2021-06-07T17:50:30+08:00</lastmod>
+    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/kubernetes/</loc>
+    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/posts/</loc>
+    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/</loc>
+    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/</loc>
+    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/development/</loc>
     <lastmod>2021-06-07T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/programming/</loc>
@@ -17,16 +32,10 @@
     <loc>https://0srv.com/tags/sre/</loc>
     <lastmod>2021-06-07T17:50:30+08:00</lastmod>
   </url><url>
-    <loc>https://0srv.com/tags/</loc>
-    <lastmod>2021-06-07T17:50:30+08:00</lastmod>
-  </url><url>
     <loc>https://0srv.com/tags/testing/</loc>
     <lastmod>2021-06-07T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/posts/testing-strategy/</loc>
-    <lastmod>2021-06-07T17:50:30+08:00</lastmod>
-  </url><url>
-    <loc>https://0srv.com/</loc>
     <lastmod>2021-06-07T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/posts/file-sharing/</loc>

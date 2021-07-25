@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>demo on zerθsrv</title>
+    <link>https://0srv.com/tags/demo/</link>
+    <description>Recent content in demo on zerθsrv</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
+    <webMaster>nopkart@gmail.com (Ed)</webMaster>
+    <lastBuildDate>Sat, 24 Jul 2021 17:50:30 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Kind Demo</title>
+      <link>https://0srv.com/posts/a-kind-demo/</link>
+      <pubDate>Sat, 24 Jul 2021 17:50:30 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/posts/a-kind-demo/</guid>
+      <description>Most of the DevOps interview assignments involving Kubernetes suggest using minikube. I believe the intent is to gauge a basic understanding of containers and related DevOps tasks. I have skills far from a Kubernetes expert but I hope the interviewing team won&amp;rsquo;t mind if we do a bit of experimenting.
+Looking around, I see there are more options for local Kubernetes clusters. I find the kind project a very promising contender.</description>
+    </item>
+    
+  </channel>
+</rss>

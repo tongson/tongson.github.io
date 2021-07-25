@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>A Kind Demo - zerθsrv</title>
+  <meta name="description" content="Most of the DevOps interview assignments involving Kubernetes suggest using minikube. I believe the intent is to gauge a basic understanding of containers and related DevOps tasks. I have skills far from a Kubernetes expert but I hope the interviewing team won&rsquo;t mind if we do a bit of experimenting.
+Looking around, I see there are more options for local Kubernetes clusters. I find the kind project a very promising contender.">
+  <meta name="author" content="Ed"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "zerθsrv",
+    
+    "url": "https:\/\/0srv.com"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/0srv.com"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/0srv.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/0srv.com\/posts\/a-kind-demo\/",
+          "name": "A kind demo"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Ed"
+  },
+  "headline": "A Kind Demo",
+  "description" : "Most of the DevOps interview assignments involving Kubernetes suggest using minikube. I believe the intent is to gauge a basic understanding of containers and related DevOps tasks. I have skills far from a Kubernetes expert but I hope the interviewing team won\u0026rsquo;t mind if we do a bit of experimenting.\nLooking around, I see there are more options for local Kubernetes clusters. I find the kind project a very promising contender.",
+  "inLanguage" : "en",
+  "wordCount":  713 ,
+  "datePublished" : "2021-07-24T17:50:30",
+  "dateModified" : "2021-07-24T17:50:30",
+  "image" : "https:\/\/0srv.com\/img\/0srv.png",
+  "keywords" : [ "demo, devops, kubernetes" ],
+  "mainEntityOfPage" : "https:\/\/0srv.com\/posts\/a-kind-demo\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/0srv.com",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/0srv.com\/img\/0srv.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="A Kind Demo" />
+<meta property="og:description" content="Most of the DevOps interview assignments involving Kubernetes suggest using minikube. I believe the intent is to gauge a basic understanding of containers and related DevOps tasks. I have skills far from a Kubernetes expert but I hope the interviewing team won&rsquo;t mind if we do a bit of experimenting.
+Looking around, I see there are more options for local Kubernetes clusters. I find the kind project a very promising contender.">
+<meta property="og:image" content="https://0srv.com/img/0srv.png" />
+<meta property="og:url" content="https://0srv.com/posts/a-kind-demo/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="zerθsrv" />
+
+  <meta name="twitter:title" content="A Kind Demo" />
+  <meta name="twitter:description" content="Most of the DevOps interview assignments involving Kubernetes suggest using minikube. I believe the intent is to gauge a basic understanding of containers and related DevOps tasks. I have skills far …">
+  <meta name="twitter:image" content="https://0srv.com/img/0srv.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@tongson" />
+  <meta name="twitter:creator" content="@tongson" />
+  <link href='https://0srv.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.86.0" />
+  <link rel="alternate" href="https://0srv.com/index.xml" type="application/rss+xml" title="zerθsrv"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://0srv.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://0srv.com/css/highlight.min.css" /><link rel="stylesheet" href="https://0srv.com/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://0srv.com">zerθsrv</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Posts" href="/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="zerθsrv" href="https://0srv.com">
+            <img class="avatar-img" src="https://0srv.com/img/0srv.png" alt="zerθsrv" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>A Kind Demo</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p><img src="/assets/a-kind-demo/kind.png" alt="kind logo"></p>
+<p>Most of the DevOps interview assignments involving Kubernetes suggest using <strong>minikube</strong>. I believe the intent is to gauge a basic understanding of containers and related DevOps tasks. I have skills far from a Kubernetes expert but I hope the interviewing team won&rsquo;t mind if we do a bit of experimenting.</p>
+<p>Looking around, I see there are more options for local Kubernetes clusters. I find the <strong>kind</strong> project a very promising contender. It&rsquo;s a bit lighter since it makes use of containers instead of virtual machines. You can also load container images directly into the cluster without fussing with registries. A plus if you just need to work on a local test Kubernetes cluster. Although the project description says it runs Docker container; it runs fine with the experimental <strong>podman</strong> provider.</p>
+<p>This is a Kind demo among other demos.</p>
+<h3 id="the-assignment">The assignment</h3>
+<p>The interviewing team may ask you to write a webserver or app that returns a JSON payload. This app is to be deployed to a Kubernetes test cluster. You can choose whatever stack you like. NodeJS and Go seem popular nowadays. Let&rsquo;s say we are most comfortable with Go. In the spirit of experimentation; I will also demo a contraption I made with <strong>Labstack echo</strong> and my project <a href="https://github.com/tongson/LadyLua">LadyLua</a>. Instead of <strong>echo</strong> <em>Go</em> code, I will use <em>Lua</em> code to return the required payload for this assignment.</p>
+<p>To create the container image I was supposed to demo my <a href="https://github.com/tongson/lbuildah">lbuildah</a> project and I would normally use the <strong>GoogleContainerTools/distroless</strong> base for Go code but a &ldquo;from scratch&rdquo; base is going to work just fine. The image will also be created using shell scripts through <strong>buildah</strong>. It can also do images in <em>Dockerfile</em> but I&rsquo;d like to show a full Dockerless workflow.</p>
+<p>The team will almost always also ask you to create a deploy script. Configuration management such as <strong>ansible</strong> is a popular option. In the past I found similar tools appealing but later I found them more trouble when containers already help with some of the problems they are supposed to solve. Shell scripts are enduring. They can be made maintainable and have &lsquo;idempotent&rsquo; capabilities. To put everything together I am going to use my shell script manager <a href="https://github.com/tongson/rr">rr</a> for some semblance of &lsquo;configuration management&rsquo;. We could just run the generated shell script but we would lose the pretty STDOUT and STDERR split output.</p>
+<h3 id="tools-used-or-requirements">Tools used or requirements</h3>
+<p>For a clean slate, I installed Linux on a spare machine. I installed the following software for this demo. I prefer Go software; requirements that are not in the package repositories are just a <code>go build</code> or <code>go install</code> away.</p>
+<p><code>go</code> <code>git</code> <code>buildah</code> <code>podman</code> <code>shellcheck</code> <code>kind</code> <code>rr</code> <code>curl</code> <code>kubectl</code></p>
+<h3 id="repository-tree-hierarchy">Repository tree hierarchy</h3>
+<p>Once you have the supporting tools everything else is in this Git
+<a href="https://github.com/tongson/demo-kubernetes-kind">repository</a>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">├── configs
+│   ├── kind.yaml                      ► The Kind configuration
+│   └── webserver.yaml                 ► App manifest
+├── main
+│   └── main.lua                       ► Web app (Lua)
+├── main.go                            ► Web app (Go)
+├── main_test.go                       ► Unit test
+└── scripts                            ► rr scripts
+    ├── app                            ► Application namespace
+    │   ├── check-pod                  ► Check pod
+    │   ├── deploy                     ► Deploy application to cluster in one-shot
+    │   ├── test-fail                  ► Test expected failure
+    │   ├── test-ok                    ► Test application from outside cluster
+    │   └── verify                     ► Verify application
+    └── cluster
+        ├── create                     ► Create Kind cluster
+        ├── verify-ingress             ► Verify ingress setup
+        └── verify-nodes               ► Verify Kind nodes setup
+</code></pre></div><h3 id="videos">Videos</h3>
+<p>It takes around five minutes to start a Kind cluster on my machine. We&rsquo;ll just show a screenshot of the finished cluster creation. Here are videos of the scripts in action.</p>
+<h4 id="cluster-creation-and-verification">Cluster creation and verification</h4>
+<video style="display:block; margin:0 auto; outline:none; width:90%; height:90%;" muted="true" loop="true" autoplay="true" class="video-shortcode" preload="auto" controls>
+    <source src="/assets/a-kind-demo/cluster-create.mp4" type="video/mp4">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+
+<h4 id="application-deployment-and-verification">Application deployment and verification</h4>
+<video style="display:block; margin:0 auto; outline:none; width:90%; height:90%;" muted="true" loop="true" autoplay="true" class="video-shortcode" preload="auto" controls>
+    <source src="/assets/a-kind-demo/app-deploy.mp4" type="video/mp4">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>Apparently, we can be playful and have some fun with Kubernetes. The docs are pretty good now for a beginner to pick up. Impressive tools such as Kind also helps a lot. It&rsquo;s no longer bothersome to accomplish these kinds of DevOps interview assignments.</p>
+<blockquote>
+<p>All tasks, payloads, and scenarios in this post are for entertainment purposes and any similarity to any DevOps interview assignment, or to any actual assignment, is intentional and anything but coincidential.</p>
+</blockquote>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://0srv.com/tags/demo/">demo</a>&nbsp;
+            
+              <a href="https://0srv.com/tags/devops/">devops</a>&nbsp;
+            
+              <a href="https://0srv.com/tags/kubernetes/">kubernetes</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2f0srv.com%2fposts%2fa-kind-demo%2f&amp;text=A%20Kind%20Demo&amp;via=tongson" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f0srv.com%2fposts%2fa-kind-demo%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2f0srv.com%2fposts%2fa-kind-demo%2f&amp;title=A%20Kind%20Demo" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2f0srv.com%2fposts%2fa-kind-demo%2f&amp;title=A%20Kind%20Demo" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2f0srv.com%2fposts%2fa-kind-demo%2f&amp;title=A%20Kind%20Demo" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2f0srv.com%2fposts%2fa-kind-demo%2f&amp;description=A%20Kind%20Demo" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">See also</h4>
+                  <ul>
+                
+                
+                    <li><a href="/posts/testing-strategy/">Testing Strategy</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://0srv.com/posts/testing-strategy/" data-toggle="tooltip" data-placement="top" title="Testing Strategy">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:nopkart@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/tongson" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/tongson" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="0srv.com">Ed</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2021
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://0srv.com">zerθsrv</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.86.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://0srv.com/js/main.js"></script>
+<script src="https://0srv.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://0srv.com/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
