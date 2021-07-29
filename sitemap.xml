@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://0srv.com/tags/cryptography/</loc>
+    <lastmod>2021-07-28T12:44:39+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/posts/cryptohack/</loc>
+    <lastmod>2021-07-28T12:44:39+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/ctf/</loc>
+    <lastmod>2021-07-28T12:44:39+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/posts/</loc>
+    <lastmod>2021-07-28T12:44:39+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/</loc>
+    <lastmod>2021-07-28T12:44:39+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/</loc>
+    <lastmod>2021-07-28T12:44:39+08:00</lastmod>
+  </url><url>
     <loc>https://0srv.com/posts/a-kind-demo/</loc>
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
@@ -15,15 +33,6 @@
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/go/</loc>
-    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
-  </url><url>
-    <loc>https://0srv.com/posts/</loc>
-    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
-  </url><url>
-    <loc>https://0srv.com/tags/</loc>
-    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
-  </url><url>
-    <loc>https://0srv.com/</loc>
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/programming/</loc>

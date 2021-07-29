@@ -8,7 +8,25 @@
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Sat, 24 Jul 2021 17:50:30 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 12:44:39 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cryptography</title>
+      <link>https://0srv.com/tags/cryptography/</link>
+      <pubDate>Wed, 28 Jul 2021 12:44:39 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/cryptography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ctf</title>
+      <link>https://0srv.com/tags/ctf/</link>
+      <pubDate>Wed, 28 Jul 2021 12:44:39 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/ctf/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>containers</title>
       <link>https://0srv.com/tags/containers/</link>

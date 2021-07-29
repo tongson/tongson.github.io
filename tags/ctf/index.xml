@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ctf on zerθsrv</title>
+    <link>https://0srv.com/tags/ctf/</link>
+    <description>Recent content in ctf on zerθsrv</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
+    <webMaster>nopkart@gmail.com (Ed)</webMaster>
+    <lastBuildDate>Wed, 28 Jul 2021 12:44:39 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CryptoHack</title>
+      <link>https://0srv.com/posts/cryptohack/</link>
+      <pubDate>Wed, 28 Jul 2021 12:44:39 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/posts/cryptohack/</guid>
+      <description>This week I have been solving the challenges at cryptohack.org. The past three days were a blast. Bit fiddling, hex buckling adventure. Did my last CTF more than a decade ago. There&amp;rsquo;s a mix of math, coding, and brain teasers.
+The challenges are grouped in the following categories.
+ General Mathematics Block Ciphers RSA Diffie-Hellman Elliptic Curves Miscellaneous Crypto on the Web  I&amp;rsquo;m bad at math so most of my points are from the problems that required coding and brain teasers.</description>
+    </item>
+    
+  </channel>
+</rss>
