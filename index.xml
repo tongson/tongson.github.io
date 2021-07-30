@@ -8,7 +8,17 @@
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Wed, 28 Jul 2021 12:44:39 +0800</lastBuildDate><atom:link href="https://0srv.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Jul 2021 19:21:03 +0800</lastBuildDate><atom:link href="https://0srv.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Weekly Toolbox (WN30)</title>
+      <link>https://0srv.com/posts/2021w30/</link>
+      <pubDate>Fri, 30 Jul 2021 19:21:03 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/posts/2021w30/</guid>
+      <description>A week wouldn&amp;rsquo;t go by without stumbling upon a new tool or service. Instead of committing to memory why not commit to Git and create a semipermanent record? Not limited to opensource, I will also feature commercial products occasionally found rummaging through product placements or news.
+Occasionally posted these on Twitter but organization and recall are horrible. Would also like to write a few words about the tool and any experience with it.</description>
+    </item>
+    
     <item>
       <title>CryptoHack</title>
       <link>https://0srv.com/posts/cryptohack/</link>

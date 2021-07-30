@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Posts - zerθsrv</title>
+  <title>The Weekly Toolbox (WN30) - zerθsrv</title>
+  <meta name="description" content="A week wouldn&rsquo;t go by without stumbling upon a new tool or service. Instead of committing to memory why not commit to Git and create a semipermanent record? Not limited to opensource, I will also feature commercial products occasionally found rummaging through product placements or news.
+Occasionally posted these on Twitter but organization and recall are horrible. Would also like to write a few words about the tool and any experience with it.">
   <meta name="author" content="Ed"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -28,14 +30,65 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/0srv.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/0srv.com\/posts\/2021w30\/",
+          "name": "The weekly toolbox ( wn30)"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Ed"
+  },
+  "headline": "The Weekly Toolbox (WN30)",
+  "description" : "A week wouldn\u0026rsquo;t go by without stumbling upon a new tool or service. Instead of committing to memory why not commit to Git and create a semipermanent record? Not limited to opensource, I will also feature commercial products occasionally found rummaging through product placements or news.\nOccasionally posted these on Twitter but organization and recall are horrible. Would also like to write a few words about the tool and any experience with it.",
+  "inLanguage" : "en",
+  "wordCount":  341 ,
+  "datePublished" : "2021-07-30T19:21:03",
+  "dateModified" : "2021-07-30T19:21:03",
+  "image" : "https:\/\/0srv.com\/img\/0srv.png",
+  "keywords" : [ "weekly" ],
+  "mainEntityOfPage" : "https:\/\/0srv.com\/posts\/2021w30\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/0srv.com",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/0srv.com\/img\/0srv.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="The Weekly Toolbox (WN30)" />
+<meta property="og:description" content="A week wouldn&rsquo;t go by without stumbling upon a new tool or service. Instead of committing to memory why not commit to Git and create a semipermanent record? Not limited to opensource, I will also feature commercial products occasionally found rummaging through product placements or news.
+Occasionally posted these on Twitter but organization and recall are horrible. Would also like to write a few words about the tool and any experience with it.">
 <meta property="og:image" content="https://0srv.com/img/0srv.png" />
-<meta property="og:url" content="https://0srv.com/posts/" />
+<meta property="og:url" content="https://0srv.com/posts/2021w30/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="zerθsrv" />
 
-  <meta name="twitter:title" content="Posts" />
+  <meta name="twitter:title" content="The Weekly Toolbox (WN30)" />
+  <meta name="twitter:description" content="A week wouldn&rsquo;t go by without stumbling upon a new tool or service. Instead of committing to memory why not commit to Git and create a semipermanent record? Not limited to opensource, I will …">
   <meta name="twitter:image" content="https://0srv.com/img/0srv.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@tongson" />
@@ -170,7 +223,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="posts-heading">
               
-                <h1>Posts</h1>
+                <h1>The Weekly Toolbox (WN30)</h1>
               
               
                 <hr class="small">
@@ -186,296 +239,114 @@
 
 
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p><img src="/img/toolbox.png" alt="The Toolbox"></p>
+<p>A week wouldn&rsquo;t go by without stumbling upon a new tool or service. Instead of committing to memory why not commit to Git and create a semipermanent record? Not limited to opensource, I will also feature commercial products occasionally found rummaging through product placements or news.</p>
+<p>Occasionally posted these on Twitter but organization and recall are horrible. Would also like to write a few words about the tool and any experience with it. You can typically find similar content in email newsletters. I can probably do 1-3 tools per week. I&rsquo;m fine to be the only one reading my posts but it might be interesting for somebody else.</p>
+<p>This is the first <em>„The Weekly Toolbox“</em>, week number 30 of 2021. Only one for today, <code>yubikey-agent</code>.</p>
+<h2 id="yubikey-agent">yubikey-agent</h2>
+<p>It&rsquo;s possible to use the smart card functionality of recent <em>Yubikey</em> models to store SSH keys. Be aware though, not all Yubikeys have smart card functionality. I think Yubikey 4 &amp; 5 have it. You can think of <code>yubikey-agent</code> as a <code>ssh-agent</code> replacement since you&rsquo;re going to pass the SSH agent socket from <code>yubikey-agent</code>. The project page at Github shows a screenshot of it in action.</p>
+<p><img src="/assets/2021w30/yubikey-agent.png" alt="yubikey-agent on macOS"></p>
+<p>Compiling is a cinch since the program is written in Go but linking statically is not straightforward since it links to a C library. I have installed <code>pcsc-lite-devel</code> to get the headers and pickup the runtime dependency. This dependency has different names across distros. Works well with GUI <code>pinentry</code> alternatives on macOS and Linux. Needs some TTY hacking similar to <code>gpg-agent</code> + SSH for console <code>pinentry</code>. On Linux, you also have to muck a bit with Polkit and its JavaScript rules. It can be installed via Homebrew on macOS or just fetch the corresponding binary from their new asset hosting, Github Packages. Just found out they moved from JFrog Bintray recently. Looks like it was shut down.</p>
+<p>Written by the Go Security lead, BSD 3-Clause licensed, and it&rsquo;s for SSH. What&rsquo;s not to like? Check it out at <a href="https://github.com/FiloSottile/yubikey-agent">github.com/FiloSottile/yubikey-agent</a>. Also added to <a href="https://github.com/tongson/rice-cooker">github.com/tongson/rice-cooker</a>.</p>
+<p>Looking forward to a great weekend.</p>
+
+
         
-        <div class="posts-list">
+          <div class="blog-tags">
+            
+              <a href="https://0srv.com/tags/weekly/">weekly</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2f0srv.com%2fposts%2f2021w30%2f&amp;text=The%20Weekly%20Toolbox%20%28WN30%29&amp;via=tongson" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2f0srv.com%2fposts%2f2021w30%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2f0srv.com%2fposts%2f2021w30%2f&amp;title=The%20Weekly%20Toolbox%20%28WN30%29" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2f0srv.com%2fposts%2f2021w30%2f&amp;title=The%20Weekly%20Toolbox%20%28WN30%29" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2f0srv.com%2fposts%2f2021w30%2f&amp;title=The%20Weekly%20Toolbox%20%28WN30%29" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2f0srv.com%2fposts%2f2021w30%2f&amp;description=The%20Weekly%20Toolbox%20%28WN30%29" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
           
-            <article class="post-preview">
-    <a href="https://0srv.com/posts/2021w30/">
-        <h2 class="post-title">The Weekly Toolbox (WN30)</h2>
-        
-        
-        
-    </a>
 
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 30, 2021
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;341&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        A week wouldn&rsquo;t go by without stumbling upon a new tool or service. Instead of committing to memory why not commit to Git and create a semipermanent record? Not limited to opensource, I will also feature commercial products occasionally found rummaging through product placements or news.
-Occasionally posted these on Twitter but organization and recall are horrible. Would also like to write a few words about the tool and any experience with it.
-        <a href="https://0srv.com/posts/2021w30/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://0srv.com/tags/weekly/">weekly</a>&nbsp;
-        
-    </div>
-    
-
-</article>
           
-            <article class="post-preview">
-    <a href="https://0srv.com/posts/cryptohack/">
-        <h2 class="post-title">CryptoHack</h2>
         
-        
-        
-    </a>
+      </article>
 
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 28, 2021
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;410&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        This week I have been solving the challenges at cryptohack.org. The past three days were a blast. Bit fiddling, hex buckling adventure. Did my last CTF more than a decade ago. There&rsquo;s a mix of math, coding, and brain teasers.
-The challenges are grouped in the following categories.
- General Mathematics Block Ciphers RSA Diffie-Hellman Elliptic Curves Miscellaneous Crypto on the Web  I&rsquo;m bad at math so most of my points are from the problems that required coding and brain teasers.
-        <a href="https://0srv.com/posts/cryptohack/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://0srv.com/tags/cryptography/">cryptography</a>&nbsp;
-        
-        <a href="https://0srv.com/tags/ctf/">ctf</a>&nbsp;
-        
-    </div>
-    
-
-</article>
+      
+        <ul class="pager blog-pager">
           
-            <article class="post-preview">
-    <a href="https://0srv.com/posts/a-kind-demo/">
-        <h2 class="post-title">A Kind Demo</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on July 24, 2021
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;713&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        Most of the DevOps interview assignments involving Kubernetes suggest using minikube. I believe the intent is to gauge a basic understanding of containers and related DevOps tasks. I have skills far from a Kubernetes expert but I hope the interviewing team won&rsquo;t mind if we do a bit of experimenting.
-Looking around, I see there are more options for local Kubernetes clusters. I find the kind project a very promising contender.
-        <a href="https://0srv.com/posts/a-kind-demo/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://0srv.com/tags/demo/">demo</a>&nbsp;
-        
-        <a href="https://0srv.com/tags/devops/">devops</a>&nbsp;
-        
-        <a href="https://0srv.com/tags/containers/">containers</a>&nbsp;
-        
-        <a href="https://0srv.com/tags/go/">go</a>&nbsp;
-        
-    </div>
-    
-
-</article>
+            <li class="previous">
+              <a href="https://0srv.com/posts/cryptohack/" data-toggle="tooltip" data-placement="top" title="CryptoHack">&larr; Previous Post</a>
+            </li>
           
-            <article class="post-preview">
-    <a href="https://0srv.com/posts/testing-strategy/">
-        <h2 class="post-title">Testing Strategy</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on June 7, 2021
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;7&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1440&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        A testing strategy that applies to a wide range of software from ToDo to DeFi apps. What&rsquo;s that like? Here&rsquo;s my take on this turbulent topic.
-In software, engineers are not engineers by trade. Definitions are mostly made up. Some are luckily agreed upon. A popular software engineer can redefine terms as they see fit and turn public perspective. What I call functional might be integration in someone’s vocabulary. Hopefully, the supporting text might clarify a particular perspective.
-        <a href="https://0srv.com/posts/testing-strategy/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://0srv.com/tags/sre/">SRE</a>&nbsp;
-        
-        <a href="https://0srv.com/tags/devops/">devops</a>&nbsp;
-        
-        <a href="https://0srv.com/tags/programming/">programming</a>&nbsp;
-        
-    </div>
-    
-
-</article>
           
-            <article class="post-preview">
-    <a href="https://0srv.com/posts/file-sharing/">
-        <h2 class="post-title">File Sharing</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on March 23, 2021
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;775&nbsp;words
-  
-  
-  
-</span>
+        </ul>
+      
 
 
-    </p>
-    <div class="post-entry">
+      
         
-        So you want to send an email with a confidential attachment. Maybe you just want some privacy. It is reasonable and should be easy. Yes, modern messaging platforms exist but email is so sturdy because of its ubiquity and federated nature.
-The Internet standards for email encryption are PGP and S/MIME but no one seems to use them. Properly using PGP or S/MIME requires senders and recipients to be configured to use either.
-        <a href="https://0srv.com/posts/file-sharing/" class="post-read-more">[Read More]</a>
         
-    </div>
+      
 
-    
-    <div class="blog-tags">
-        
-        <a href="https://0srv.com/tags/solutions/">solutions</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://0srv.com/posts/fortigate-x-sonicwall/">
-        <h2 class="post-title">FortiGate x SonicWall</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on February 18, 2021
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1267&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        This comparison of network equipment was commissioned by a client. I am evaluating Fortinet and SonicWall products. No practical testing was done. This will be a factual objective comparison using publicly available information. Hopefully, the reader will integrate my findings with their own evaluation criteria.
-The first impression from my client’s demo experience is that Fortigate had the best coordination and quickest turnaround. SonicWall had some difficulty and delays but eventually delivered a working demo.
-        <a href="https://0srv.com/posts/fortigate-x-sonicwall/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://0srv.com/tags/networking/">networking</a>&nbsp;
-        
-        <a href="https://0srv.com/tags/juxtapose/">juxtapose</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
-        </div>
-        
-      </div>
     </div>
   </div>
+</div>
 
       
 <footer>
@@ -510,7 +381,7 @@ The first impression from my client’s demo experience is that Fortigate had th
               </li>
           
           <li>
-            <a href="/posts/index.xml" title="RSS">
+            <a href="" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
