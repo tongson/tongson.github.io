@@ -8,7 +8,43 @@
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Fri, 30 Jul 2021 19:21:03 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Aug 2021 16:35:02 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>containers</title>
+      <link>https://0srv.com/tags/containers/</link>
+      <pubDate>Thu, 05 Aug 2021 16:35:02 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://0srv.com/tags/devops/</link>
+      <pubDate>Thu, 05 Aug 2021 16:35:02 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iyclo</title>
+      <link>https://0srv.com/tags/iyclo/</link>
+      <pubDate>Thu, 05 Aug 2021 16:35:02 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/iyclo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>solutions</title>
+      <link>https://0srv.com/tags/solutions/</link>
+      <pubDate>Thu, 05 Aug 2021 16:35:02 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/tags/solutions/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>weekly</title>
       <link>https://0srv.com/tags/weekly/</link>
@@ -37,29 +73,11 @@
     </item>
     
     <item>
-      <title>containers</title>
-      <link>https://0srv.com/tags/containers/</link>
-      <pubDate>Sat, 24 Jul 2021 17:50:30 +0800</pubDate>
-      <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://0srv.com/tags/containers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>demo</title>
       <link>https://0srv.com/tags/demo/</link>
       <pubDate>Sat, 24 Jul 2021 17:50:30 +0800</pubDate>
       <author>nopkart@gmail.com (Ed)</author>
       <guid>https://0srv.com/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>devops</title>
-      <link>https://0srv.com/tags/devops/</link>
-      <pubDate>Sat, 24 Jul 2021 17:50:30 +0800</pubDate>
-      <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://0srv.com/tags/devops/</guid>
       <description></description>
     </item>
     
@@ -87,15 +105,6 @@
       <pubDate>Mon, 07 Jun 2021 17:50:30 +0800</pubDate>
       <author>nopkart@gmail.com (Ed)</author>
       <guid>https://0srv.com/tags/sre/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>solutions</title>
-      <link>https://0srv.com/tags/solutions/</link>
-      <pubDate>Tue, 23 Mar 2021 17:50:30 +0800</pubDate>
-      <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://0srv.com/tags/solutions/</guid>
       <description></description>
     </item>
     

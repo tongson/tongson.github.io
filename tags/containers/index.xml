@@ -8,7 +8,16 @@
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Sat, 24 Jul 2021 17:50:30 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Aug 2021 16:35:02 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iyclo</title>
+      <link>https://0srv.com/posts/iyclo/</link>
+      <pubDate>Thu, 05 Aug 2021 16:35:02 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/posts/iyclo/</guid>
+      <description>In a past gig, I was tasked to evaluate container schedulers. The usual suspects Kubernetes and Nomad were the contenders. One huge caveat with the whole exercise is that containers are being scheduled within AWS. You have EKS and ECS but can&amp;rsquo;t move it to on-premises infrastructure in case an inexplicable reason comes up. Looking closely at these schedulers, they are designed for bare-metal fleets. If you have servers across multiple data centers, like a CDN, then Kubernetes is the best out there.</description>
+    </item>
+    
     <item>
       <title>A Kind Demo</title>
       <link>https://0srv.com/posts/a-kind-demo/</link>

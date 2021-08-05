@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>solutions on zerθsrv</title>
-    <link>https://0srv.com/tags/solutions/</link>
-    <description>Recent content in solutions on zerθsrv</description>
+    <title>iyclo on zerθsrv</title>
+    <link>https://0srv.com/tags/iyclo/</link>
+    <description>Recent content in iyclo on zerθsrv</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Thu, 05 Aug 2021 16:35:02 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/solutions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Aug 2021 16:35:02 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/iyclo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iyclo</title>
       <link>https://0srv.com/posts/iyclo/</link>
@@ -16,16 +16,6 @@
       <author>nopkart@gmail.com (Ed)</author>
       <guid>https://0srv.com/posts/iyclo/</guid>
       <description>In a past gig, I was tasked to evaluate container schedulers. The usual suspects Kubernetes and Nomad were the contenders. One huge caveat with the whole exercise is that containers are being scheduled within AWS. You have EKS and ECS but can&amp;rsquo;t move it to on-premises infrastructure in case an inexplicable reason comes up. Looking closely at these schedulers, they are designed for bare-metal fleets. If you have servers across multiple data centers, like a CDN, then Kubernetes is the best out there.</description>
-    </item>
-    
-    <item>
-      <title>File Sharing</title>
-      <link>https://0srv.com/posts/file-sharing/</link>
-      <pubDate>Tue, 23 Mar 2021 17:50:30 +0800</pubDate>
-      <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://0srv.com/posts/file-sharing/</guid>
-      <description>So you want to send an email with a confidential attachment. Maybe you just want some privacy. It is reasonable and should be easy. Yes, modern messaging platforms exist but email is so sturdy because of its ubiquity and federated nature.
-The Internet standards for email encryption are PGP and S/MIME but no one seems to use them. Properly using PGP or S/MIME requires senders and recipients to be configured to use either.</description>
     </item>
     
   </channel>
