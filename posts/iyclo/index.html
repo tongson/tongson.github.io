@@ -59,7 +59,7 @@
   "headline": "iyclo",
   "description" : "In a past gig, I was tasked to evaluate container schedulers. The usual suspects Kubernetes and Nomad were the contenders. One huge caveat with the whole exercise is that containers are being scheduled within AWS. You have EKS and ECS but can\u0026rsquo;t move it to on-premises infrastructure in case an inexplicable reason comes up. Looking closely at these schedulers, they are designed for bare-metal fleets. If you have servers across multiple data centers, like a CDN, then Kubernetes is the best out there.",
   "inLanguage" : "en",
-  "wordCount":  655 ,
+  "wordCount":  664 ,
   "datePublished" : "2021-08-05T16:35:02",
   "dateModified" : "2021-08-05T16:35:02",
   "image" : "https:\/\/0srv.com\/img\/0srv.png",
@@ -242,7 +242,7 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p><img src="/assets/iyclo/iyclo.png" alt="iyclo"></p>
-<p>In a past gig, I was tasked to evaluate container schedulers. The usual suspects <strong>Kubernetes</strong> and <strong>Nomad</strong> were the contenders. One huge caveat with the whole exercise is that containers are being <em>scheduled</em> within AWS. You have <code>EKS</code> and <code>ECS</code> but can&rsquo;t move it to on-premises infrastructure in case an inexplicable reason comes up. Looking closely at these schedulers, they are designed for bare-metal fleets. If you have servers across multiple data centers, like a CDN, then Kubernetes is the best out there. These schedulers introduce necessary complexity for what they can do. Inter-cloud benefits are dubious at best. I imagine AWS scaling plus whatever the AI, sorry scheduler, decides to do can be an ordeal as you watch them fight it out.</p>
+<p>In a past gig, I was tasked to evaluate container schedulers. The usual suspects <strong>Kubernetes</strong> and <strong>Nomad</strong> were the contenders. One huge caveat with the whole exercise is that containers are being <em>scheduled</em> within AWS. You have EKS and ECS but can&rsquo;t move it to on-premises infrastructure in case an inexplicable reason comes up. Looking closely at these schedulers, they are designed for bare-metal fleets. If you have servers across multiple data centers, like a CDN, then Kubernetes is the best out there. These schedulers introduce necessary complexity for what they can do. Inter-cloud benefits are dubious at best. I imagine AWS scaling plus whatever the AI, sorry scheduler, decides to do can be an ordeal as you watch them fight it out.</p>
 <p>I went with what I thought would introduce the least friction. Podman on the EC2 distro of choice was what I ended up with. Nomad was close call, it had experimental Podman support. Docker is more popular but there are footguns littered across the vestiges. Maybe it&rsquo;s a good choice for a developer not familiar with Linux plumbing underneath. Podman is objectively cleaner and smaller. The system is non-standard but that doesn&rsquo;t matter much for systems of such size. Without proper knowledge retention and transfer within an organization, it&rsquo;s futile whatever it does. No need for a team holding certifications in Kubernetes. Any DevOps person worth his or her carbon footprint can figure it out and manage or even improve it.</p>
 <h2 id="my-weird-solution">My weird solution</h2>
 <p>From my experience with facilitating that marriage of Podman and systemd, I think a more elaborate daemon for deploying containers is in order. Think a Docker daemon but calls to Podman and systemd for the hard work. It&rsquo;s called <strong>iyclo</strong>.</p>
@@ -259,7 +259,7 @@ diagrams.</p>
 oilyc, or oily containers. Sounds ridiculous alright. Anyway, I wanted a unique name for it.</p>
 <p>The entrypoint of the program is through the command line. I have chosen the <strong>clir</strong> Go package to handle the command
 line options. It&rsquo;s very light and does what I need from it. Using it for passing flags like the log file, storage path, and socket
-path. The REST API will be handled by Labstack <strong>echo</strong> and <strong>LadyLua</strong>. The bulk of the code will be written in Lua. I don&rsquo;t see a
+path. The REST API will be handled by Labstack <strong>echo</strong> and <strong>LadyLua</strong>. Any storage requirement is handled by the <strong>bitcask</strong> package. The bulk of the code will be written in Lua. I don&rsquo;t see a
 problem with writing a CRUD application or a small REST API in Lua. Everything can be converted to Go if an unforeseen circumstance arises. The <code>STDOUT</code> and <code>STDERR</code> of the program are taken over by <strong>echo</strong> output. The actual logging will be handled through <strong>zerolog</strong> which logs
 to a file.</p>
 <p>This is the first part of a series chronicling <strong>iyclo</strong>. I&rsquo;m figuring out the REST API at the moment. The next entry would
