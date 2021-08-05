@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://0srv.com/tags/containers/</loc>
+    <lastmod>2021-08-05T16:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/devops/</loc>
+    <lastmod>2021-08-05T16:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/iyclo/</loc>
+    <lastmod>2021-08-05T16:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/posts/iyclo/</loc>
+    <lastmod>2021-08-05T16:35:02+08:00</lastmod>
+  </url><url>
     <loc>https://0srv.com/posts/</loc>
-    <lastmod>2021-07-30T19:21:03+08:00</lastmod>
+    <lastmod>2021-08-05T16:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/tags/solutions/</loc>
+    <lastmod>2021-08-05T16:35:02+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/</loc>
-    <lastmod>2021-07-30T19:21:03+08:00</lastmod>
+    <lastmod>2021-08-05T16:35:02+08:00</lastmod>
+  </url><url>
+    <loc>https://0srv.com/</loc>
+    <lastmod>2021-08-05T16:35:02+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/posts/2021w30/</loc>
     <lastmod>2021-07-30T19:21:03+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/weekly/</loc>
-    <lastmod>2021-07-30T19:21:03+08:00</lastmod>
-  </url><url>
-    <loc>https://0srv.com/</loc>
     <lastmod>2021-07-30T19:21:03+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/cryptography/</loc>
@@ -29,13 +44,7 @@
     <loc>https://0srv.com/posts/a-kind-demo/</loc>
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
-    <loc>https://0srv.com/tags/containers/</loc>
-    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
-  </url><url>
     <loc>https://0srv.com/tags/demo/</loc>
-    <lastmod>2021-07-24T17:50:30+08:00</lastmod>
-  </url><url>
-    <loc>https://0srv.com/tags/devops/</loc>
     <lastmod>2021-07-24T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/tags/go/</loc>
@@ -51,9 +60,6 @@
     <lastmod>2021-06-07T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/posts/file-sharing/</loc>
-    <lastmod>2021-03-23T17:50:30+08:00</lastmod>
-  </url><url>
-    <loc>https://0srv.com/tags/solutions/</loc>
     <lastmod>2021-03-23T17:50:30+08:00</lastmod>
   </url><url>
     <loc>https://0srv.com/posts/fortigate-x-sonicwall/</loc>
