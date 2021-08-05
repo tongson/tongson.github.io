@@ -59,7 +59,7 @@
   "headline": "iyclo",
   "description" : "In a past gig, I was tasked to evaluate container schedulers. The usual suspects Kubernetes and Nomad were the contenders. One huge caveat with the whole exercise is that containers are being scheduled within AWS. You have EKS and ECS but can\u0026rsquo;t move it to on-premises infrastructure in case an inexplicable reason comes up. Looking closely at these schedulers, they are designed for bare-metal fleets. If you have servers across multiple data centers, like a CDN, then Kubernetes is the best out there.",
   "inLanguage" : "en",
-  "wordCount":  654 ,
+  "wordCount":  655 ,
   "datePublished" : "2021-08-05T16:35:02",
   "dateModified" : "2021-08-05T16:35:02",
   "image" : "https:\/\/0srv.com\/img\/0srv.png",
@@ -255,14 +255,14 @@ pattern might find some utility in this project.</p>
 <p>Looking at the above figure gives a rough idea of what I&rsquo;m aiming at. We have a client program or even a Terraform module that connects to the API via a daemon socket. The manifest is a JSON payload that instructs how <strong>iyclo</strong> provisions the containers with podman and systemd. Podman handles the container attributes such as sandboxing and resources. Seccomp filters or capability dropping are considered sandboxing. Resources can be CPU or memory. Monitoring and launching the <code>podman</code> executable is done by <code>systemd</code>. It can also do some pre-execution sandboxing or isolation. Jobs are scheduled through systemd <code>timers</code>. Instead of services, I think <strong>pods</strong> is a better name. I&rsquo;m going to change it on later
 diagrams.</p>
 <h2 id="current-status">Current status</h2>
-<p>The project page is at <a href="https://github.com/tongson/iyclo">github/iyclo</a>. If you&rsquo;re curious, <strong>iyclo</strong> is an anagram of
+<p>The project page is at <a href="https://github.com/tongson/iyclo">github/iyclo</a>. For the curious, <strong>iyclo</strong> is an anagram of
 oilyc, or oily containers. Sounds ridiculous alright. Anyway, I wanted a unique name for it.</p>
 <p>The entrypoint of the program is through the command line. I have chosen the <strong>clir</strong> Go package to handle the command
 line options. It&rsquo;s very light and does what I need from it. Using it for passing flags like the log file, storage path, and socket
 path. The REST API will be handled by Labstack <strong>echo</strong> and <strong>LadyLua</strong>. The bulk of the code will be written in Lua. I don&rsquo;t see a
-problem with writing a CRUD application or small REST API in Lua. Everything can be converted to Go if an unforeseen circumstance arises. The <code>STDOUT</code> and <code>STDERR</code> of the program are taken over by <strong>echo</strong> output. The actual logging will be handled through <strong>zerolog</strong> which logs
+problem with writing a CRUD application or a small REST API in Lua. Everything can be converted to Go if an unforeseen circumstance arises. The <code>STDOUT</code> and <code>STDERR</code> of the program are taken over by <strong>echo</strong> output. The actual logging will be handled through <strong>zerolog</strong> which logs
 to a file.</p>
-<p>This is the first part of a series describing <strong>iyclo</strong>. I&rsquo;m figuring out the REST API at the moment. The next entry would
+<p>This is the first part of a series chronicling <strong>iyclo</strong>. I&rsquo;m figuring out the REST API at the moment. The next entry would
 likely include details about the API.</p>
 
 
