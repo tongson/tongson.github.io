@@ -8,7 +8,17 @@
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Fri, 30 Jul 2021 19:21:03 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/weekly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Aug 2021 17:48:27 +0800</lastBuildDate><atom:link href="https://0srv.com/tags/weekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Weekly Toolbox (WN31)</title>
+      <link>https://0srv.com/posts/2021w31/</link>
+      <pubDate>Fri, 06 Aug 2021 17:48:27 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/posts/2021w31/</guid>
+      <description>This is The Weekly Toolbox, week 31 of 2021. We have three Go programs and a security framework document.
+Dasel A command line program written in GO for editing, transforming, and converting various data interchange formats. According to the feature set it can handle JSON, TOML, YAML, XML, and CSV. It&amp;rsquo;s an alternative to jq or yq. I think those are more popular in this category of tools. The project repository has a GIF loop to demo its functionality.</description>
+    </item>
+    
     <item>
       <title>The Weekly Toolbox (WN30)</title>
       <link>https://0srv.com/posts/2021w30/</link>
