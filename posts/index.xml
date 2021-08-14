@@ -16,7 +16,7 @@
       <author>nopkart@gmail.com (Ed)</author>
       <guid>https://0srv.com/posts/2021w32/</guid>
       <description>This is The Weekly Toolbox, week 32 of 2021. Containers and mesh networks are theme this week.
-naml If we are kindred spirits then you may find YAML deplorable too. When doing work related to Kubernetes then it&amp;rsquo;s unavoidable. Luckily someone went enough! and created naml. Go programs instead of YAML, finally some sanity. The author has empathy for people with substantial piles of YAML. The program can &amp;ldquo;codify&amp;rdquo; existing YAML to Go.</description>
+naml If we are kindred spirits then you may find YAML deplorable too. When doing work related to Kubernetes then it&amp;rsquo;s unavoidable. Luckily someone went enough! and created naml. Go programs instead of YAML, finally some sanity. The author has empathy for people with piles of YAML. The program can &amp;ldquo;codify&amp;rdquo; existing YAML to Go.</description>
     </item>
     
     <item>
