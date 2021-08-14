@@ -8,7 +8,17 @@
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Fri, 06 Aug 2021 17:48:27 +0800</lastBuildDate><atom:link href="https://0srv.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Aug 2021 17:48:27 +0800</lastBuildDate><atom:link href="https://0srv.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Weekly Toolbox (WN32)</title>
+      <link>https://0srv.com/posts/2021w32/</link>
+      <pubDate>Sat, 14 Aug 2021 17:48:27 +0800</pubDate>
+      <author>nopkart@gmail.com (Ed)</author>
+      <guid>https://0srv.com/posts/2021w32/</guid>
+      <description>This is The Weekly Toolbox, week 32 of 2021. Containers and mesh networks are theme this week.
+naml If we are kindred spirits then you may find YAML deplorable too. When doing work related to Kubernetes then it&amp;rsquo;s unavoidable. Luckily someone went enough! and created naml. Go programs instead of YAML, finally some sanity. The author has empathy for people with substantial piles of YAML. The program can &amp;ldquo;codify&amp;rdquo; existing YAML to Go.</description>
+    </item>
+    
     <item>
       <title>The Weekly Toolbox (WN31)</title>
       <link>https://0srv.com/posts/2021w31/</link>
