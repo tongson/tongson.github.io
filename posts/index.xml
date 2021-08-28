@@ -8,38 +8,7 @@
     <language>en-us</language>
     <managingEditor>nopkart@gmail.com (Ed)</managingEditor>
     <webMaster>nopkart@gmail.com (Ed)</webMaster>
-    <lastBuildDate>Sat, 21 Aug 2021 17:48:27 +0800</lastBuildDate><atom:link href="https://0srv.com/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Weekly Toolbox (WN33)</title>
-      <link>https://0srv.com/posts/2021w33/</link>
-      <pubDate>Sat, 21 Aug 2021 17:48:27 +0800</pubDate>
-      <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://0srv.com/posts/2021w33/</guid>
-      <description>This is The Weekly Toolbox, week 33 of 2021. Linters and secrets management abound.
-amber A small secrets management program written in Rust. Created by people at FP Complete. Borne out from their Kubernetes deployment workflow. They have a blog post about amber and the repo is at Github.
-I prefer the combination of sops and age. Just two Go programs to pass around. This project appears to use the Rust bindings to the sodium library.</description>
-    </item>
-    
-    <item>
-      <title>The Weekly Toolbox (WN32)</title>
-      <link>https://0srv.com/posts/2021w32/</link>
-      <pubDate>Sat, 14 Aug 2021 17:48:27 +0800</pubDate>
-      <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://0srv.com/posts/2021w32/</guid>
-      <description>This is The Weekly Toolbox, week 32 of 2021. Containers and mesh networks are theme this week.
-naml If we are kindred spirits then you may find YAML deplorable too. When doing work related to Kubernetes then it&amp;rsquo;s unavoidable. Luckily someone went enough! and created naml. Go programs instead of YAML, finally some sanity. The author has empathy for people with piles of YAML. The program can &amp;ldquo;codify&amp;rdquo; existing YAML to Go.</description>
-    </item>
-    
-    <item>
-      <title>The Weekly Toolbox (WN31)</title>
-      <link>https://0srv.com/posts/2021w31/</link>
-      <pubDate>Fri, 06 Aug 2021 17:48:27 +0800</pubDate>
-      <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://0srv.com/posts/2021w31/</guid>
-      <description>This is The Weekly Toolbox, week 31 of 2021. We have three Go programs and a security framework document.
-Dasel A command line program written in GO for editing, transforming, and converting various data interchange formats. According to the feature set it can handle JSON, TOML, YAML, XML, and CSV. It&amp;rsquo;s an alternative to jq or yq. I think those are more popular in this category of tools. The project repository has a GIF loop to demo its functionality.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 05 Aug 2021 16:35:02 +0800</lastBuildDate><atom:link href="https://0srv.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iyclo</title>
       <link>https://0srv.com/posts/iyclo/</link>
@@ -47,16 +16,6 @@ Dasel A command line program written in GO for editing, transforming, and conver
       <author>nopkart@gmail.com (Ed)</author>
       <guid>https://0srv.com/posts/iyclo/</guid>
       <description>In a past gig, I was tasked to evaluate container schedulers. The usual suspects Kubernetes and Nomad were the contenders. One huge caveat with the whole exercise is that containers are being scheduled within AWS. You have EKS and ECS but can&amp;rsquo;t move it to on-premises infrastructure in case an inexplicable reason comes up. Looking closely at these schedulers, they are designed for bare-metal fleets. If you have servers across multiple data centers, like a CDN, then Kubernetes is the best out there.</description>
-    </item>
-    
-    <item>
-      <title>The Weekly Toolbox (WN30)</title>
-      <link>https://0srv.com/posts/2021w30/</link>
-      <pubDate>Fri, 30 Jul 2021 19:21:03 +0800</pubDate>
-      <author>nopkart@gmail.com (Ed)</author>
-      <guid>https://0srv.com/posts/2021w30/</guid>
-      <description>A week wouldn&amp;rsquo;t go by without stumbling upon a new tool or service. Instead of committing to memory why not commit to Git and create a semipermanent record? Not limited to opensource, I will also feature commercial products occasionally found rummaging through product placements or news.
-Occasionally posted these on Twitter but organization and recall are horrible. Would also like to write a few words about the tool and any experience with it.</description>
     </item>
     
     <item>
